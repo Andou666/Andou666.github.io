@@ -1,0 +1,118 @@
+*{
+  margin: 0; 
+}
+
+h1, p{
+  color:white;
+  
+  padding: 10px;
+}
+
+h1{
+  font-size: 2em;  
+  text-decoration: underline white;
+  margin-bottom: 20px;
+}
+
+p{
+  font-size: 1.4em
+}
+
+body{
+  background: url("../img/poo_tile.png");
+  animation: bgroop 20s linear infinite;
+}
+
+footer{
+    background: brown;
+    color: whitesmoke;
+    text-align: center;
+    border-top: whitesmoke 1px solid;
+    padding: 15px 0 25px 0;
+}
+
+canvas{
+    margin-bottom: 10px;
+}
+
+
+.poo{
+    animation: anime-poo 7s infinite;
+}
+
+.menu{
+    background: brown;
+}
+.menu li a{
+    color: whitesmoke;
+}
+.menu li a:hover{
+    color: #777;
+}
+
+.brand{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.box{
+    background: burlywood;
+    border-radius: 14px;
+    margin: 4px;
+    margin-bottom: 20px;
+    box-shadow: #a52a2a 0 5px;
+    text-align: center;
+}
+
+.box p{
+    color: brown;
+    padding: 0 2em;
+}
+
+.box ul{
+    color: #a52a2a;
+    list-style: none;
+}
+
+.box a{
+    margin-left:40px;
+    margin-bottom: 10px;  
+}
+
+.wc{
+   margin: 5%;
+   border-radius: 5%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+@keyframes anime-poo{
+    0%{ fill: burlywood;}
+    55%{ fill: rgb(151, 116, 52);}
+    100%{ fill: burlywood;}
+}
+
+@keyframes bgroop {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 204px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.5em;
+    }
+    p{
+      font-size: 1em;
+    }
+    .wc{
+      width:50%;
+    }
+  }
